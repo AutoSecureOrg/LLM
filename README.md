@@ -1,4 +1,4 @@
-LLM WhiteRabbitNeo Llama-3 8B v2.0 Q4_K_M
+### **LLM WhiteRabbitNeo Llama-3 8B v2.0 Q4_K_M**
 
 ## **Complete LLM Setup on Raspberry Pi**
 
