@@ -15,18 +15,20 @@ sudo apt update && sudo apt install -y build-essential cmake git python3-pip
 ```bash
 git clone https://github.com/ggerganov/llama.cpp.git
 cd llama.cpp
+#Install libcurl support:
+sudo apt install libcurl4-openssl-dev
 cmake -B build
 cmake --build build --config Release
 ```
 
 ---
 
-### Download `.gguf` model
+### Download `.gguf` model with aria2
 
 ```bash
-mkdir -p models
+sudo apt install aria2
 cd models
-wget wget https://huggingface.co/mradermacher/Llama-3-WhiteRabbitNeo-8B-v2.0-GGUF/resolve/main/Llama-3-WhiteRabbitNeo-8B-v2.0.Q4_K_M.gguf
+aria2c -x 16 -s 16 "https://huggingface.co/mradermacher/Llama-3-WhiteRabbitNeo-8B-v2.0-GGUF/resolve/main/Llama-3-WhiteRabbitNeo-8B-v2.0.Q4_K_M.gguf"
 cd ..
 ```
 
