@@ -11,8 +11,8 @@ from pathlib import Path
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
 HOST = '127.0.0.1'
 PORT = 5005
-MODEL_PATH = '/home/autosecure/llama.cpp/models/Llama-3-WhiteRabbitNeo-8B-v2.0.Q4_K_M.gguf'
-#MODEL_PATH = '/home/autosecure/llama.cpp/models/Llama-3-WhiteRabbitNeo-8B-v2.0.Q4_K_S.gguf'
+MODEL_PATH = '/home/autosecure/FYP/llama.cpp/models/Llama-3-WhiteRabbitNeo-8B-v2.0.Q4_K_M.gguf'
+#MODEL_PATH = '/home/autosecure/FYP/llama.cpp/models/Llama-3-WhiteRabbitNeo-8B-v2.0.Q4_K_S.gguf'
 CACHE_DB = 'llama_cache.db'
 THREADS = 4
 N_CTX = 256
